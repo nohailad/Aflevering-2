@@ -1,0 +1,20 @@
+$my-font: 'Arvo', 'helvetica', 'sans-serif';
+$gray-container-bg: #eeeeee;
+$gray-border: 1px solid rgba(0, 0, 0, 0.125);
+$width: 100%;
+$display: flex;
+$margin: 0;
+
+@mixin my-rotate {
+  transform: rotate(5deg);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+@mixin side-settings {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+

@@ -1,0 +1,199 @@
+h1 {
+  @include my-font;
+}
+
+.someStyle {
+  flex: 1;
+  flex-direction: row;
+}
+
+.banner-container {
+  padding: 0;
+}
+
+.banner-top-container {
+  position: relative;
+}
+
+.banner-col {
+  padding: 0;
+}
+
+.banner {
+  @include width;
+  height: 400px;
+  z-index: 0;
+  object-fit: cover;
+}
+
+.web-title {
+  color: white;
+  flex: 1;
+}
+
+.absolute-fill-bg {
+  @include display;
+  flex-direction: column-reverse;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  @include side-settings
+}
+
+.burger-row {
+  position: absolute;
+  @include side-settings
+}
+
+.burger-container {
+  @include display;
+  padding-left: 30px;
+  padding-right: 30px;
+  flex-direction: row-reverse;
+  @include width;
+}
+
+.toggler-style {
+  border-width: 0;
+}
+.nav-row {
+  @include display;
+  @include width;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.nav-container {
+  @include display;
+  flex-direction: row;
+}
+
+.nav-option {
+  @include display;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  transition: 0.3s;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Arvo';
+&:hover {
+  color: gray;
+}
+}
+
+.figure-image {
+  @include width;
+}
+
+.figure-card {
+  background-color: $gray-container-bg;
+  padding: 4px;
+  padding-left: 10px;
+}
+
+.price-card {
+  background-color: $gray-container-bg;
+}
+
+.figure-caption {
+  color: black;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: large;
+  @include my-font;
+}
+
+.list-card {
+  @include display;
+  background-color: $gray-container-bg;
+  flex-direction: row;
+  padding: 0;
+}
+
+.list-card-left-container {
+  @include display;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: $gray-border;
+  padding: 10px 20px 10px 20px;
+}
+
+.list-card-right-container {
+  @include display;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.list-card-month {
+  @include margin;
+  color: red;
+  font-size: 18px;
+}
+
+.list-card-day {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.list-card-location {
+  font-size: 16px;
+  font-weight: bold;
+  @include margin;
+  text-align: left;
+}
+
+.list-card-description {
+  margin-top: 6px;
+  font-size: 12px;
+  @include margin;
+  text-align: left;
+}
+
+.flex-container {
+  @include display;
+  flex-direction: column;
+}
+
+.rest-of-section {
+  @include display;
+  flex-direction: column;
+  flex: 1;
+}
+
+.price-container {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.margin-top {
+  margin-top: 10px;
+}
+
+.title-margin {
+  margin-top: 30px;
+}
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-text {
+  text-align: center;
+}
